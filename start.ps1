@@ -15,7 +15,7 @@ if ($LASTEXITCODE -ne 0) {
 }
 
 Write-Host "2. Oczekiwanie na inicjalizacje PostgreSQL..." -ForegroundColor Yellow
-for ($i = 10; $i -gt 0; $i--) {
+for ($i = 3; $i -gt 0; $i--) {
     Write-Host -NoNewline "`r   Pozostalo: $i s  "
     Start-Sleep -Seconds 1
 }
